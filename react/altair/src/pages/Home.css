@@ -1,0 +1,149 @@
+.home {
+    min-height: calc(100vh - 100px);
+}
+
+.hero {
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
+    padding: 6rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    color: #e0e7ff;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.tagline {
+    color: #cbd5e0;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: #d4a574;
+    color: #1a3a52;
+}
+
+.btn-primary:hover {
+    background-color: #e6c89e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(212, 165, 116, 0.4);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 2px solid #d4a574;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #e6c89e;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 4px solid #d4a574;
+    box-shadow: 0 2px 8px rgba(26, 58, 82, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(26, 58, 82, 0.12);
+}
+
+.feature h3 {
+    color: #1a3a52;
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+}
+
+.feature p {
+    color: #718096;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.promo {
+    padding: 4rem 2rem;
+}
+
+.promo-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #2c5282 0%, #1a3a52 100%);
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(26, 58, 82, 0.2);
+}
+
+.promo-box h2 {
+    color: #ffffff;
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+.promo-box p {
+    color: #cbd5e0;
+}
+
+.hero-content p {
+    font-size: 1rem;
+}
+
+.hero-buttons {
+    flex-direction: column;
+}
+
+.btn {
+    width: 100%;
+}
+
+
+}

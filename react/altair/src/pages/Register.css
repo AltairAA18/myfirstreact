@@ -1,0 +1,121 @@
+.register-page {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
+    padding: 2rem;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-box {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(26, 58, 82, 0.3);
+    border-top: 4px solid #d4a574;
+}
+
+.register-box h1 {
+    color: #1a3a52;
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+}
+
+.register-box>p {
+    color: #718096;
+    text-align: center;
+    margin: 0 0 2rem 0;
+    font-size: 0.9rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #2d3748;
+    transition: all 0.3s ease;
+    background-color: #f7fafc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2c5282;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
+
+.register-box .btn {
+    width: 100%;
+    background-color: #1a3a52;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.register-box .btn:hover {
+    background-color: #d4a574;
+    color: #1a3a52;
+    box-shadow: 0 4px 8px rgba(212, 165, 116, 0.3);
+}
+
+.login-link {
+    text-align: center;
+    color: #718096;
+    font-size: 0.85rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.login-link a {
+    color: #2c5282;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #d4a574;
+}
+
+@media (max-width: 600px) {
+    .register-box {
+        padding: 1.5rem;
+    }
+    .register-box h1 {
+        font-size: 1.5rem;
+    }
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
