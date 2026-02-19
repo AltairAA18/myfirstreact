@@ -16,9 +16,9 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h4>Контакты</h4>
-          <p>Телефон: +7 (999) 123-45-67</p>
-          <p>Email: info@restaurant.ru</p>
-          <p>Адрес: ул. Примерная, д. 42</p>
+          <p>Телефон: +7 (727) 333-44-55</p>
+          <p>Email: info@restaurant.kz</p>
+          <p>Адрес: пр. Абая, д. 42, Алматы</p>
         </div>
       </div>
       <div className="footer-bottom">

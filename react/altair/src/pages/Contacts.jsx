@@ -13,15 +13,15 @@ function Contacts() {
           <h2>Основная информация</h2>
           <div className="info-item">
             <h3>📍 Адрес</h3>
-            <p>улица Примерная, дом 42<br/>Город, Регион 123456</p>
+            <p>пр. Абая, 42<br/>Алматы, 050007</p>
           </div>
           <div className="info-item">
             <h3>📞 Телефон</h3>
-            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+            <p><a href="tel:+77273334455">+7 (727) 333-44-55</a></p>
           </div>
           <div className="info-item">
             <h3>✉️ Email</h3>
-            <p><a href="mailto:info@restaurant.ru">info@restaurant.ru</a></p>
+            <p><a href="mailto:info@restaurant.kz">info@restaurant.kz</a></p>
           </div>
         </section>
 

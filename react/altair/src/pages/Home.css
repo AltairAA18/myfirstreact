@@ -4,9 +4,50 @@
 
 .hero {
     background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
-    padding: 6rem 2rem;
-    text-align: center;
+    padding: 5rem 2rem;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(212, 165, 116, 0.2);
+    color: #d4a574;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    width: fit-content;
 }
 
 .hero-content h1 {
@@ -15,27 +56,61 @@
     margin: 0 0 1rem 0;
     font-weight: 700;
     letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    color: #e0e7ff;
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 0 !important;
 }
 
 .hero-content p {
     color: #e0e7ff;
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+    font-size: 1rem;
+    margin: 0;
 }
 
 .tagline {
     color: #cbd5e0;
     font-size: 1rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #d4a574;
+    border-radius: 4px;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.stat h3 {
+    color: #d4a574;
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.stat p {
+    color: #cbd5e0;
+    margin: 0;
+    font-size: 0.95rem;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
@@ -74,76 +149,202 @@
     border-color: #e6c89e;
 }
 
+.highlight {
+    background: linear-gradient(135deg, #f9fafb 0%, #f7fafc 100%);
+    padding: 4rem 2rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.highlight-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(26, 58, 82, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.highlight-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(26, 58, 82, 0.15);
+}
+
+.highlight-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-item h3 {
+    color: #1a3a52;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+}
+
+.highlight-item p {
+    color: #718096;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.features {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.features h2 {
+    text-align: center;
+    color: #1a3a52;
+    font-size: 2rem;
+    margin: 0 0 3rem 0;
+}
+
 .features-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
 }
 
 .feature {
-    padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    border-left: 4px solid #d4a574;
-    box-shadow: 0 2px 8px rgba(26, 58, 82, 0.08);
+    padding: 2.5rem;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .feature:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(26, 58, 82, 0.12);
+    box-shadow: 0 12px 24px rgba(26, 58, 82, 0.12);
+    border-color: #d4a574;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .feature h3 {
     color: #1a3a52;
     margin: 0 0 1rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .feature p {
     color: #718096;
     margin: 0;
     line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .promo {
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%);
 }
 
 .promo-box {
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #2c5282 0%, #1a3a52 100%);
-    padding: 3rem;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 4rem;
+    border-radius: 16px;
+    border: 1px solid rgba(212, 165, 116, 0.3);
     text-align: center;
     color: white;
-    box-shadow: 0 4px 15px rgba(26, 58, 82, 0.2);
+    box-shadow: 0 8px 32px rgba(26, 58, 82, 0.2);
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .promo-box h2 {
     color: #ffffff;
-    margin: 0 0 1rem 0;
-    font-size: 1.8rem;
+    margin: 0 0 1.5rem 0;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 .promo-box p {
     color: #cbd5e0;
+    margin: 0 0 2rem 0;
+    font-size: 1.1rem;
+    max-width: 600px;
 }
 
-.hero-content p {
-    font-size: 1rem;
+.promo-highlight {
+    color: #d4a574;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
-.hero-buttons {
-    flex-direction: column;
+.promo-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.btn {
-    width: 100%;
+.btn-light {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
+.btn-light:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #d4a574;
+}
 
+.features {
+    padding: 4rem 2rem;
+    background-color: #f9fafb;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+    .promo-box {
+        padding: 2rem;
+    }
+    .promo-box h2 {
+        font-size: 1.5rem;
+    }
+    .promo-buttons {
+        flex-direction: column;
+    }
+    .features h2 {
+        font-size: 1.5rem;
+    }
 }
